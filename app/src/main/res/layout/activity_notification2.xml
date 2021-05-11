@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity2"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rainy5" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="112dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/umbrella"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text="Rainy Day"
+        android:textColor="@color/Yello"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center_horizontal"
+        android:padding="26dp"
+        android:text="Recommends you to have an Umbrella and Grip Footwear. "
+        android:textColor="@color/Yello"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Good Weather for Long Drive "
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginTop="500dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AirQuality">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgair"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="AIR QUALITY INDEX"
+        android:textStyle="italic"
+        android:textColor="@color/Dark2"
+        android:textColorHighlight="@color/Blue"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/cityname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:hint="Enter City name "
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/Dark" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="(Unhealthy)"
+        android:layout_below="@+id/head"
+        android:textColor="@color/Dark2"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/airquality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/co"
+        android:layout_centerHorizontal="true"
+        android:text="163"
+        android:textStyle="italic"
+        android:textColorHighlight="@color/FF"
+        android:textColor="@color/Dark2"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cityname"
+        android:layout_marginTop="215dp"
+        android:text="                         "
+        android:textSize="15dp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/cityname" />
+
+    <TextView
+        android:id="@+id/updated_field"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cityname"
+        android:layout_marginTop="178dp"
+        android:text="                         "
+        android:textSize="15dp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/cityname" />
+
+
+    <Button
+        android:id="@+id/btncheck"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/CO_value"
+        android:background="@drawable/shape"
+        android:text="CHECK"
+        android:textColor="@color/Dark2"
+        android:textColorHighlight="@color/FF"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:layout_toLeftOf="@+id/CO_value" />
+
+    <TextView
+        android:id="@+id/co"
+        android:textStyle="italic|bold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="180dp"
+        android:text="  Ozone(O3)  "
+        android:textSize="22dp"
+        android:background="@drawable/roundbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/Dark2"
+        />
+
+    <TextView
+        android:id="@+id/NO2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundbutton"
+        android:text="  Nitrogen Dioxide(NO2)"
+        android:textSize="22dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/Dark2" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SO2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:text="  Sulphur Dioxide(SO2)"
+        android:textStyle="bold|italic"
+        android:textSize="22dp"
+        android:background="@drawable/roundbutton"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/Dark2" />
+
+    <TextView
+        android:id="@+id/PM"
+        android:layout_width="250dp"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="  PM 25"
+        android:textSize="25dp"
+        android:background="@drawable/roundbutton"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/Dark2" />
+
+    <TextView
+        android:id="@+id/CO_value"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/co"
+        android:background="@drawable/shape4"
+        android:text=" 11.5"
+        android:textColor="@color/DarkRed"
+        android:textColorHighlight="@color/Red"
+        android:textSize="15dp"
+        android:layout_marginBottom="2dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/NO2_value"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SO2"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape4"
+        android:text="  15 "
+        android:textColor="@color/DarkRed"
+        android:textColorHighlight="@color/Red"
+        android:textSize="15dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/SO2_value"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NO2"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape4"
+        android:text="  4.9  "
+        android:textColor="@color/DarkRed"
+        android:textColorHighlight="@color/Red"
+        android:textSize="15dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/PM_value"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PM"
+        android:layout_alignLeft="@+id/CO_value"
+        android:layout_alignStart="@+id/CO_value"
+        android:background="@drawable/shape4"
+        android:text="  163  "
+        android:textColor="@color/DarkRed"
+        android:textColorHighlight="@color/Red"
+        android:textSize="15dp"
+        android:textStyle="italic|bold" />
+</RelativeLayout>
